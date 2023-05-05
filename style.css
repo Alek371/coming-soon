@@ -76,6 +76,7 @@ header {
   width: 444px;
   min-height: 200px;
   text-transform: uppercase;
+  letter-spacing: 17.3206px;
 }
 
 .main-left span {
@@ -86,6 +87,7 @@ header {
   line-height: 28px;
   width: 444px;
   color: var(--darker-creame);
+  letter-spacing: 17.3206px;
 }
 .main-right {
   background-image: url(/images/hero-desktop.jpg);
