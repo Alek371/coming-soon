@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --creame: #ee8b8b;
+  --darker-creame: #ce9898;
+  --text-dark: #423a3a;
+  --gradient-first: #f8bfbf;
+  --gradinet-secound: #ee8b8b;
+  --border: #f96464;
+  --font-family: "Josefin Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  gap: 25px;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  min-width: 1440px;
+  height: 90vh;
+  display: flex;
+  max-height: 800px;
+  min-width: 1440px;
+  max-width: 1600px;
+  background-color: #f2f2f2;
+}
+
+header {
+  position: absolute;
+  display: block;
+  top: 75px;
+  left: 165px;
+}
+
+.main-left {
+  padding: 244px 220px 150px 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-left b {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: var(--creame);
+  text-transform: uppercase;
+}
+
+.main-left h1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 71px;
+  color: var(--text-dark);
+  width: 444px;
+  min-height: 200px;
+  text-transform: uppercase;
+}
+
+.main-left span {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  width: 444px;
+  color: var(--darker-creame);
+}
+.main-right {
+  background-image: url(/images/hero-desktop.jpg);
+  min-width: 610px;
+  min-height: 800px;
+  width: 40%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-mail {
+  display: flex;
+  position: relative;
+}
+
+.input-mail input {
+  width: 100%;
+  height: 56px;
+  border-radius: 35px;
+  border: 1px solid var(--darker-creame);
+  padding: 0 25px;
+}
+
+input:focus {
+  outline: 2px solid var(--border);
+}
+
+.submit {
+  padding: 18px 44px;
+  background: linear-gradient(#f8bfbf, #ee8b8b);
+  border-radius: 35px;
+  position: absolute;
+  right: 0;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  transform: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: opacity(0.5);
+}
+
+.error {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 25%;
+  right: 25%;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-container p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  color: var(--border);
+  padding: 4px 25px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    justify-content: start;
+    background-color: #f2f2f2;
+  }
+  main {
+    padding: 100px 0 0 0;
+    min-width: 375px;
+    min-height: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+  }
+
+  header {
+    position: fixed;
+    display: block;
+    height: 85px;
+    top: 0;
+    left: 0;
+    padding: 25px 0 0 25px;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .main-left {
+    order: 3;
+    padding: 0;
+    align-items: center;
+  }
+
+  .main-left h1 {
+    width: 311px;
+    text-align: center;
+  }
+
+  .main-left span {
+    width: 311px;
+  }
+
+  .input-mail input {
+    width: 311px;
+  }
+
+  .error {
+    right: 40%;
+  }
+  .main-right {
+    order: 2;
+    background-image: url("/images/hero-mobile.jpg");
+    background-position: center;
+    min-width: 376px;
+    min-height: 250px;
+    width: 100%;
+  }
+
+  footer {
+    position: relative;
+    margin: 50px 0 0 0;
+  }
+}
