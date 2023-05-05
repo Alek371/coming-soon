@@ -50,6 +50,10 @@ header {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(221.42deg, #fff1f1 2.6%, #ffffff 96.36%);
 }
 
 .main-left b {
@@ -86,7 +90,7 @@ header {
 .main-right {
   background-image: url(/images/hero-desktop.jpg);
   min-width: 610px;
-  min-height: 800px;
+  max-height: 800px;
   width: 40%;
   height: 100%;
   background-repeat: no-repeat;
